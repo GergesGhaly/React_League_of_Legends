@@ -1,0 +1,74 @@
+.start{
+    background-image: url(./img/start-backgrond.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  margin-bottom: 0px;
+  text-align: center;
+
+}
+
+    
+
+        
+    
+
+.start .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+}
+.start .background video{
+   
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+.Tech-uesd{
+    width: 90%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 15%, rgba(51,162,149,0.11248249299719892) 49%, rgba(0,0,0,0) 85%);
+}
+
+.start  h4,h5{
+    padding: 15px 0;
+    font-weight: 100;
+  
+}
+
+.start  button {
+  position: absolute;
+ bottom: 5vh; 
+ transform: translate(-50%, -50%);
+ padding: 15px 20px ;
+    width: 200px;
+    cursor:pointer;
+    color: #C8AA6E;
+    font-size: 25px;
+    border: 4px solid #C8AA6E;
+    background-color: transparent ;
+    cursor:pointer;
+}
+
+/* .start .start-btn img{
+    width: 100%;
+} */
+@media only screen and (max-width: 500px){
+    .start  button {
+       padding: 15px 20px ;
+          width: 150px;
+      }
+      
+    
+    }

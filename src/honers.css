@@ -1,0 +1,36 @@
+
+.honers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.honers .swiper {
+    width: 230px;
+    height: 330px;
+  }
+  
+  .honers .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    width: 100%;
+  }
+  .honers .swiper-slide img{
+   
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 500px){
+    .honers .swiper {
+      width: 200px;
+      height: 300px;
+    }
+        
+    
+    }

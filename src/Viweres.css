@@ -1,0 +1,88 @@
+ .viwers .container{
+    margin-top: 30px;
+    padding: 30px 0px 26px;
+    display: grid;
+    grid-gap: 25px;
+    gap: 25px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  
+  
+}
+@media (max-width: 1300px) {
+  .viwers .container{
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+    .viwers .container{
+
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  .viwers .container .card{
+    position: relative;
+    overflow: hidden;
+    border: 3px solid rgb(249, 249, 249, 0.1);
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 /69%) 0px 26px 30px -10px,
+      rgb(0 0 0/ 73%) 0px 16px 10px -10px;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    padding-top: 56.25%;
+    cursor: pointer;
+  
+  }
+  .viwers .container .card img{
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    inset: 0px;
+    z-index: 1;
+  }
+
+  .viwers .container .card video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    z-index: 0;
+
+  }
+  .viwers .container .card::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+background-color: rgba(255, 0, 0, 0.116);
+    height: 100%;
+    width: 100%;
+z-index: 5;
+display: none;
+  }
+
+ 
+  .viwers .container .card:hover{
+    transform:scale(1.05);
+    border-color:rgba(249,249,249,0.8);
+
+  }
+  .viwers .container .card:hover::after{
+    display: block;
+
+  }
+
+  .viwers .container .card:hover video{
+    z-index: 2;
+
+    opacity:1;
+  }
+
+
+  
